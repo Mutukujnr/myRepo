@@ -339,7 +339,7 @@ button:hover{
 
 .home-wrapper{
   width:100%;
-  height: 100vh;
+  height: 180vh;
   background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('Images/home.jpg');
   background-position: center;
   background-size: cover;
@@ -355,6 +355,7 @@ button:hover{
   top:0;
   left:0;
   right:0;
+  z-index: 1;
 }
 
 
@@ -522,11 +523,12 @@ button:hover{
 
 .home-container{
   width: 100%;
+  height: fit-content;
   position: absolute;
-  top: 40%;
-  transform: translateY(-50%);
+  top: 50px;
   text-align:center;
   color:#fff;
+  
 }
 
 .home-container h1{
@@ -542,13 +544,56 @@ button:hover{
   color:lawngreen
 }
 
-.social-media{
+.home-container .desc{
+  width:100;
+  height: fit-content;
+  margin-top: 20px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.home-container .desc .profile{
+  width:200px;
+  height:200px;
+  margin: 10px auto;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.home-container .projects{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+}
+
+.home-container .projects .one,.two{
+  border: 1px solid aqua;
+  transition: 0.5s;
+}
+
+.home-container .projects .one:hover{
+  color:white;
+  background-color: #575a7b;
+  cursor: pointer;
+}
+
+.home-container .projects .two:hover{
+  color:white;
+  background-color: #575a7b;
+  cursor: pointer;
+}
+
+.proj-img{
+  width:70%;
+  height:200px;
+}
+
+.home-container .social-media{
   width: 40%;
-  transform: translateY(-50%);
-  position: absolute;
-  top:80%;
   left: 30%;
- 
+  margin: 50px auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -600,13 +645,12 @@ button:hover{
   margin: 0 auto;
 }
 
-.about-container .content-wrapper p ul{
+ ul{
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
-
-.about-container .content-wrapper p ul li{
+ul li{
   color:goldenrod;
 }
 /* our services page*/
