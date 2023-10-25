@@ -1,0 +1,302 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+
+}
+
+body{
+  background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('Images/home.jpg');
+  background-position: center;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+}
+
+.home-nav-section{
+  height: 60px;
+  background-color: darkblue;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+}
+
+
+.home-logo{
+  width:50px;
+  height: 50px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+
+.content-section{
+  width:40%;
+}
+
+
+
+.content-section ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  
+  
+}
+
+.content-section ul li{
+  display: inline-block;
+  position: relative;
+}
+
+.content-section ul li a{
+  color:#fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.content-section ul li::after{
+  content: '';
+  height: 4px;
+  width: 0;
+  background: red;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+}
+
+.content-section ul li:hover::after{
+  width: 100%;
+  transition: 0.5s;
+
+}
+
+.profile{
+
+  width:30%;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.profile .log-out{
+  width:60px;
+  height: 20px;
+  background-color: red;
+}
+
+
+
+.profile .log-out div a{
+  width: 100%;
+  color:#fff;
+  padding-left: 2px;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.profile .bell{
+  width:27px;
+  height: 27px;
+  position: relative;
+
+}
+
+.profile .bell img{
+  width:100%;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+ 
+}
+
+ .count{
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top:-8px;
+  right: -4px;
+  background-color: red;
+ position: absolute;
+  border-radius: 50%;
+}
+
+.count p{
+  width: 100%;
+  margin: 0 auto;
+  color: #fff;
+  font-weight: 600;
+  font-size: 12px;
+  text-align: center;
+}
+
+.msg{
+  position: relative;
+  width:30px;
+  height:30px;
+}
+
+ .msg-count{
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top:-8px;
+  right: -4px;
+  background-color: red;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.profile .msg .msg-count p{
+  width: 100%;
+  margin: 0 auto;
+  color: #fff;
+  font-weight: 600;
+  font-size: 12px;
+  text-align: center;
+}
+
+.profile .msg img{
+  width:100%;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.profile .img{
+  background-color: #fff;
+  width:40px;
+  height:40px;
+  border-radius: 50%;
+  
+}
+
+.profile .img p{
+  width:100%;
+  margin-top:25%;
+  margin-bottom: 50%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.container{
+  margin:60px auto;
+  width:80%;
+}
+
+.contact-box{
+  display:flex;
+  background: #fff;
+}
+
+.contact-left{
+  flex-basis: 60%;
+  padding: 40px 60px;
+}
+
+.contact-right{
+  flex-basis: 40%;
+  padding:40px;
+  background: #1c00b5;
+  color:#fff;
+}
+
+h1{
+  margin-bottom: 10px;
+  color:goldenrod;
+}
+
+.container p{
+  margin-bottom: 40px;
+}
+
+.input-row{
+  display:flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.input-row .input-group{
+  flex-basis: 45%;
+}
+
+
+input{
+  margin-top: 3px;
+  width:100%;
+  border:none;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  outline: none;
+}
+
+textarea{
+  width:100%;
+  border:1px solid #ccc;
+  padding:10px;
+  outline: none;
+}
+
+label{
+  display: block;
+  margin-bottom: 6px;
+  color:#1c00b5;
+}
+
+button{
+  border:none;
+  outline:none;
+  background-color: #1c00b5;
+  width:100px;
+  height:35px;
+  border-radius:30px;
+  color:#fff;
+  margin-top: 20px;
+  cursor:pointer;
+  box-shadow: 0px 5px 15px 5px rgba(28, 0, 181, 0.3);
+}
+
+.contact-left h3{
+  color:#1c00b5;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.contact-right h3{
+
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+tr td:first-child{
+  padding-right: 20px;
+}
+
+tr td{
+  padding-top: 20px;
+}
+
+
+.footer{
+  background-color: paleturquoise;
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  height:50px;
+  z-index: 4;
+}
+
+.footer div{
+  width:100%;
+  margin-top: 6px;
+
+}
+
+.footer div h3{
+  text-align: center;
+}
